@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Style Picker",
+  "description": "Pick font and border styles from any webpage",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
